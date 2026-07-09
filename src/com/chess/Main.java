@@ -26,14 +26,9 @@ public class Main {
      * @param args optional: port number as first argument
      */
     public static void main(String[] args) {
-        int port = DEFAULT_PORT;
-        if (args.length > 0) {
-            try {
-                port = Integer.parseInt(args[0]);
-            } catch (NumberFormatException e) {
-                System.err.println("Invalid port number. Using default: " + DEFAULT_PORT);
-            }
-        }
+         int port = Integer.parseInt(
+            System.getenv().getOrDefault("PORT", "8080")
+            );
 
         // Determine the public directory path
         String publicDir = findPublicDir();

@@ -1,0 +1,22 @@
+# Maven build outputs
+target/
+**/target/
+
+# Temporary Zip & Binaries
+*.zip
+maven/
+**/maven/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.eclipse/
+.classpath
+.project
+.settings/
+*.iml
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
